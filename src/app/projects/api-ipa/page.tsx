@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImageSrc } from "@/lib/imagePath";
 import Link from "next/link";
 
 export const metadata = {
@@ -80,7 +81,7 @@ export default function ApiIpaPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ipa-api.png"
+              src={getImageSrc("/images/ipa-api.png")}
               alt="API-IPA Interface"
               width={800}
               height={500}

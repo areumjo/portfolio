@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImageSrc } from "@/lib/imagePath";
 import Link from "next/link";
 
 export const metadata = {
@@ -55,7 +56,7 @@ export default function SeattleRestaurantsPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-8 md:mt-12">Action</h2>
           <div className="not-prose grid md:grid-cols-2 gap-8 my-8 items-start">
             <Image
-              src="/images/seattle-yelp-1.png"
+              src={getImageSrc("/images/seattle-yelp-1.png")}
               alt="Seattle Restaurants App"
               width={400}
               height={600}
@@ -84,7 +85,7 @@ export default function SeattleRestaurantsPage() {
 
           <div className="not-prose flex gap-8 justify-center items-center my-8">
             <Image
-              src="/images/seattle-yelp-2.png"
+              src={getImageSrc("/images/seattle-yelp-2.png")}
               alt="Seattle Restaurants Mobile View 1"
               width={250}
               height={450}
@@ -92,7 +93,7 @@ export default function SeattleRestaurantsPage() {
             />
             <div className="w-px h-40 bg-gray-300"></div>
             <Image
-              src="/images/seattle-yelp-3.png"
+              src={getImageSrc("/images/seattle-yelp-3.png")}
               alt="Seattle Restaurants Mobile View 2"
               width={250}
               height={450}
@@ -119,7 +120,7 @@ export default function SeattleRestaurantsPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-8 md:mt-12">Demo of the app</h2>
           <div className="not-prose my-8">
             <Image
-              src="/images/seattle-yelp-gif.gif"
+              src={getImageSrc("/images/seattle-yelp-gif.gif")}
               alt="Seattle Restaurants Demo"
               width={800}
               height={500}

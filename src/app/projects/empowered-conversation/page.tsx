@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImageSrc } from "@/lib/imagePath";
 import Link from "next/link";
 
 export const metadata = {
@@ -73,7 +74,7 @@ export default function EmpoweredConversationPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-8 md:mt-12">Action</h2>
           <div className="not-prose grid md:grid-cols-2 gap-8 my-8 items-start">
             <Image
-              src="/images/empower-gif.gif"
+              src={getImageSrc("/images/empower-gif.gif")}
               alt="Empowered Conversation Animation"
               width={400}
               height={600}
@@ -107,7 +108,7 @@ export default function EmpoweredConversationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/empower-react.png"
+              src={getImageSrc("/images/empower-react.png")}
               alt="Empowered Conversation React App"
               width={800}
               height={500}
@@ -125,7 +126,7 @@ export default function EmpoweredConversationPage() {
           <div className="not-prose grid md:grid-cols-2 gap-8 my-8 items-start">
             <div>
               <Image
-                src="/images/empower-mobile.png"
+                src={getImageSrc("/images/empower-mobile.png")}
                 alt="Empowered Conversation Mobile View"
                 width={300}
                 height={550}
@@ -152,7 +153,7 @@ export default function EmpoweredConversationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/empower-desktop.png"
+              src={getImageSrc("/images/empower-desktop.png")}
               alt="Empowered Conversation Desktop View"
               width={800}
               height={500}
@@ -170,7 +171,7 @@ export default function EmpoweredConversationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/empower-collab.png"
+              src={getImageSrc("/images/empower-collab.png")}
               alt="Team Collaboration"
               width={800}
               height={500}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getImageSrc } from "@/lib/imagePath";
 
 const projects = [
   {
@@ -115,7 +116,7 @@ export default function Home() {
 
           <div className="flex-shrink-0">
             <Image
-              src="https://avatars0.githubusercontent.com/u/50808975?s=460&v=4"
+              src={getImageSrc("https://avatars0.githubusercontent.com/u/50808975?s=460&v=4")}
               alt="Areum Jo"
               width={250}
               height={250}
@@ -156,7 +157,7 @@ export default function Home() {
                   </div>
                   <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden">
                     <Image
-                      src={project.image}
+                      src={getImageSrc(project.image)}
                       alt={project.title}
                       width={800}
                       height={450}
@@ -185,7 +186,7 @@ export default function Home() {
                     <p className={`mb-6 ${project.text === 'black' ? 'text-black/90' : 'text-white/90'}`}>{project.description}</p>
                     <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg mx-auto w-4/5">
                       <Image
-                        src={project.image}
+                        src={getImageSrc(project.image)}
                         alt={project.title}
                         width={400}
                         height={300}

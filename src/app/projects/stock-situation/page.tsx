@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImageSrc } from "@/lib/imagePath";
 import Link from "next/link";
 
 export const metadata = {
@@ -111,7 +112,7 @@ export default function StockSituationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ss-ver1.png"
+              src={getImageSrc("/images/ss-ver1.png")}
               alt="Stock Situation Version 1"
               width={800}
               height={500}
@@ -129,7 +130,7 @@ export default function StockSituationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ss-ver2-1.png"
+              src={getImageSrc("/images/ss-ver2-1.png")}
               alt="Stock Situation Version 2"
               width={800}
               height={500}
@@ -156,7 +157,7 @@ export default function StockSituationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ss-homepage.png"
+              src={getImageSrc("/images/ss-homepage.png")}
               alt="Stock Situation Homepage"
               width={800}
               height={500}
@@ -172,7 +173,7 @@ export default function StockSituationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ss-search.png"
+              src={getImageSrc("/images/ss-search.png")}
               alt="Stock Situation Search Feature"
               width={400}
               height={300}
@@ -189,7 +190,7 @@ export default function StockSituationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ss-stock-detail.png"
+              src={getImageSrc("/images/ss-stock-detail.png")}
               alt="Stock Detail Page with Driving Factors"
               width={800}
               height={500}
@@ -206,7 +207,7 @@ export default function StockSituationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ss-past-posts.png"
+              src={getImageSrc("/images/ss-past-posts.png")}
               alt="Past Posts Performance View"
               width={800}
               height={500}
@@ -224,7 +225,7 @@ export default function StockSituationPage() {
           <div className="not-prose grid md:grid-cols-2 gap-4 my-8">
             <div>
               <Image
-                src="/images/ss-performance-days.png"
+                src={getImageSrc("/images/ss-performance-days.png")}
                 alt="Daily Performance Metrics"
                 width={400}
                 height={300}
@@ -234,7 +235,7 @@ export default function StockSituationPage() {
             </div>
             <div>
               <Image
-                src="/images/ss-performance-years.png"
+                src={getImageSrc("/images/ss-performance-years.png")}
                 alt="Yearly Performance Charts"
                 width={400}
                 height={300}
@@ -253,7 +254,7 @@ export default function StockSituationPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/ss-about.png"
+              src={getImageSrc("/images/ss-about.png")}
               alt="About Page - Mission and Team"
               width={800}
               height={500}

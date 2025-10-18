@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImageSrc } from "@/lib/imagePath";
 import Link from "next/link";
 
 export const metadata = {
@@ -96,7 +97,7 @@ export default function CovidForecastPage() {
 
           <div className="not-prose my-8">
             <Image
-              src="/images/oqn.png"
+              src={getImageSrc("/images/oqn.png")}
               alt="One Quiet Night COVID-19 Forecast Visualization"
               width={800}
               height={500}
