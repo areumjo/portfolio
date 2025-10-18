@@ -1,0 +1,12 @@
+Hello Reum
+
+# when you want to copy photo from local to ssh
+scp `file-name` bitnami@areumjo.com:~/portfolio/public/images/`file-name`
+
+scp chart*.png bitnami@areumjo.com:/home/bitnami/portfolio/public/images 
+
+
+# run this command once in a month for cert
+```
+sudo /opt/bitnami/letsencrypt/scripts/renew-certificate.sh
+```
