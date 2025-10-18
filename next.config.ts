@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/lib/imageLoader.ts',
   },
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio',
+  basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio' : '',
   trailingSlash: true,
 };
 
